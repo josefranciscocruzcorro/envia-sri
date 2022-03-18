@@ -1,0 +1,21 @@
+{
+    "name": "josefranciscocruzcorro/envia-sri",
+    "description": "Libreria para envio y recepcion de xml al SRI Ecuador",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Josefranciscocruzcorro\\EnviaSri\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jose Francisco Cruz Corro",
+            "email": "josefranciscocruzcorro@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "econea/nusoap": "^0.9.11"
+    }
+}
