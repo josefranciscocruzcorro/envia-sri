@@ -77,6 +77,10 @@ class Enviador
             # code...
             $r2 = $result['autorizaciones']["autorizacion"]["comprobante"];
 
+            $r2 = utf8_decode($r2);
+            $r2 = str_replace("&lt;","<",$r2);
+            $r2 = str_replace("&gt;",">",$r2);
+
             $xml = simplexml_load_string($r2);
             $r2 = json_encode($xml);
         }
